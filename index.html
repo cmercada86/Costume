@@ -9,12 +9,12 @@
       .mode{
 	  position: relative;
 	  margin: 10px 10px 10px 10px;
-	  display: block
+	  display: inline-block
       }
       .setting{
 	  margin: 10px 10px 10px 10px;
 	  position: relative;
-	  display: block
+	  display: inline-block
       }
 
       .color{
@@ -22,8 +22,12 @@
 	  padding:10px;
 	  border-radius: 10px;
     	  border: 2px solid #8c25c7;
-	  display: block
+	  display: table-cell;
       }
+	    
+	.div *{
+	   display: block; 
+	   }
 	 
 	    
       .setModeButton {
@@ -62,7 +66,7 @@
     <div id="normal" class="mode active">
       <button class="setModeButton">Normal</button>
     </div>
-    <div id="party" >
+    <div id="party" class="mode" >
 
       <button class="setModeButton">Party!</button>
     </div>
