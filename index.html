@@ -99,7 +99,7 @@
 							url: $(location).attr('origin') + '/normal',
 							dataType: 'json',
 							success: function(result) {
-                setActiveMode('normal');
+								setCurrentModeSettings(result);
 							},
 							processData: false,
 				
@@ -112,7 +112,7 @@
 							url: $(location).attr('origin') + '/party',
 							dataType: 'json',
 							success: function(result) {
-                
+                						setCurrentModeSettings(result);
 							},
 							processData: false,
 				
@@ -128,7 +128,8 @@
 							url: $(location).attr('origin') + '/chase',
 							dataType: 'json',
 							success: function(result) {
-                setActiveMode('chase');
+                					//setActiveMode('chase');
+								setCurrentModeSettings(result);
 							},
 							processData: false,
 				
@@ -150,13 +151,16 @@
 							url: $(location).attr('origin') + '/current',
 							dataType: 'json',
 							success: function(result) {
-                
+                						setCurrentModeSettings(result);
 							},
 							processData: false,
 				
 						});
 
 		    });
+       }
+       
+       var setCurrentModeSettings=function(result){
        }
     </script>
     
